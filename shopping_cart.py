@@ -27,6 +27,7 @@ products = [
 #
 # INFO CAPTURE / INPUT
 #
+
 total_price = 0
 selected_ids = []
 while True:
@@ -37,8 +38,20 @@ while True:
         selected_ids.append(selected_id)
 #
 # INFO DISPLAY / OUTPUT
-#
-# print(selected_ids)
+import datetime
+
+now = datetime.datetime.now()
+
+print("---------------------------------")
+print("JOANN'S MARKET")
+print("17 Glenwolde Park")
+print("Tarrytown, New York 10591")
+print("914-539-0396")
+print("WWW.JOANNSMARKET.COM")
+print("---------------------------------")
+print("CHECKOUT AT: " + str(now))
+print("---------------------------------")
+
 for selected_id in selected_ids:
     matching_products = [p for p in products if str(p["id"]) == str(selected_id)]
     matching_product = matching_products[0]
@@ -48,12 +61,7 @@ for selected_id in selected_ids:
 
 print("TOTAL PRICE: " + str("${:,.2f}".format(total_price)))
 
-#Please input a product identifier: 1
-#Please input a product identifier: 2
-#Please input a product identifier: 3
-#Please input a product identifier: 2
-#Please input a product identifier: 1
-#Please input a product identifier: DONE
+
 #> ---------------------------------
 #> GREEN FOODS GROCERY
 #> WWW.GREEN-FOODS-GROCERY.COM
