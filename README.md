@@ -1,5 +1,3 @@
-# shopping-cart
-
 Project Title: Shopping Cart Guided Project
  
 Getting Started: 
@@ -34,20 +32,6 @@ From GitHub Desktop, open Visual Code Studio, create a .py file (such as shoppin
      {"id":20, "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink", "department": "beverages", # "aisle": "juice nectars", "price": 4.25}
  ] # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
  
- def to_usd(my_price):
-     """
-     Converts a numeric value to usd-formatted string, for printing and display purposes.
- 
-     Param: my_price (int or float) like 4000.444444
- 
-     Example: to_usd(4000.444444)
- 
-     Returns: $4,000.44
-     """
-     return f"${my_price:,.2f}" #> $12,000.71
- 
- # TODO: write some Python code here to produce the desired output
- 
 print(products)
  
 Open GitBash from GitHub Desktop
@@ -61,18 +45,8 @@ To test the virtual environment, run the above given script by typing within Git
 python shopping_cart.py
  
 Running the tests:
-# Explain how to run the automated tests for this system
-# 
-# Break down into end to end tests
-# Explain what these tests test and why
-# 
-# Give an example
-# And coding style tests
-# Explain what these tests test and why
-# 
-# Give an example
-# Deployment
-# Add additional notes about how to deploy this on a live system
+To run the test, enter product IDs until all items are selected.
+Enter 'DONE' when all items are selected and receipt will generate.
 
 Built With:
 Python
