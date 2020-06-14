@@ -1,14 +1,11 @@
-Project Title: Shopping Cart Guided Project
+Project Title: 
+Shopping Cart Guided Project
  
 Getting Started: 
 Create a repo on GitHub such as "shopping-cart".  Add a README.md file, Python gitignore, and MIT # LICENSE.
- 
 Clone the repo onto GitHub Desktop.
- 
 From GitHub Desktop, open Visual Code Studio, create a .py file (such as shopping_cart.py) and copy the below contents into the .py file:
-
 # shopping_cart.py
- 
  products = [
      {"id":1, "name": "Chocolate Sandwich Cookies", "department": "snacks", "aisle": "cookies cakes", # "price": 3.50},
      {"id":2, "name": "All-Seasons Salt", "department": "pantry", "aisle": "spices seasonings", "price": # 4.99},
@@ -31,16 +28,13 @@ From GitHub Desktop, open Visual Code Studio, create a .py file (such as shoppin
      {"id":19, "name": "Gluten Free Quinoa Three Cheese & Mushroom Blend", "department": "dry goods # pasta", "aisle": "grains rice dried goods", "price": 3.99},
      {"id":20, "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink", "department": "beverages", # "aisle": "juice nectars", "price": 4.25}
  ] # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
- 
-print(products)
- 
-Open GitBash from GitHub Desktop
+ print(products)
+ Open GitBash from GitHub Desktop
 
 Installing:
 An Anaconda virtual environment will need to be set up.  Within GitBash type:
    conda create -n shopping-env python=3.7
    conda activate shopping-env
-
 To test the virtual environment, run the above given script by typing within GitBash:
 python shopping_cart.py
  
@@ -61,10 +55,10 @@ Authors:
 prof-rossetti - Initial work and provided guided project
 jkg363 - Completed guided project
 
-License
+License:
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
-Acknowledgments
+Acknowledgments:
 Guided project by: prof-rossetti
 SOURCE: https://github.com/prof-rossetti/intro-to-python/tree/master/projects/shopping-cart 
 
