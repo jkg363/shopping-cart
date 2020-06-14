@@ -6,7 +6,7 @@ Create a repo on GitHub such as "shopping-cart".  Add a README.md file, Python g
 
 Clone the repo onto GitHub Desktop.
 
-From GitHub Desktop, open Visual Code Studio, create a .py file (such as shopping_cart.py) and copy the below contents into the .py file: shopping_cart.py
+From GitHub Desktop, open Visual Code Studio, create a .py file (such as shopping_cart.py) and copy your items into the .py file in the following format:
 
  products = [
      {"id":1, "name": "Chocolate Sandwich Cookies", "department": "snacks", "aisle": "cookies cakes", # "price": 3.50},
@@ -49,6 +49,8 @@ python shopping_cart.py
 To run the test, enter product IDs until all items are selected.
 
 Enter 'DONE' when all items are selected and receipt will generate.
+
+Customize your receipt with your own store name, address, phone number and website.
 
 # Built With:
 Python
