@@ -23,7 +23,7 @@ products = [
     {"id":20, "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink", "department": "beverages", "aisle": "juice nectars", "price": 4.25}
 ] # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
 
-def to_usd(my_price):
+def to_usd(total_price):
     """
     Converts a numeric value to usd-formatted string, for printing and display purposes.
 
@@ -33,28 +33,31 @@ def to_usd(my_price):
 
     Returns: $4,000.44
     """
-    return f"${my_price:,.2f}" #> $12,000.71
-
+    return f"${total_price:,.2f}" #> $12,000.71
 
 # print(products)
 
 #
 # INFO CAPTURE / INPUT
 #
+total_price = 0
 
 while True:
-    selected_id = input("Please input a product identifier: ")
-    #. "DONE"
+    selected_id = input("Please input a product identifier, or 'DONE' if there are no more items: ")
     if selected_id == "DONE":
         break
     else: 
         matching_products = [p for p in products if str(p["id"]) == str(selected_id)]
         matching_product = matching_products[0]
+        total_price = total_price + matching_product["price"]
         print("SELECTED PRODUCT: " + matching_product["name"] + " " + str(matching_product["price"]))
 
 #
 # INFO DISPLAY / OUTPUT
 #
+
+
+print("TOTAL PRICE: " + str(total_price))
 
 #Please input a product identifier: 1
 #Please input a product identifier: 2
