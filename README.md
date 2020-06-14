@@ -1,11 +1,13 @@
-Project Title: 
+# Project Title: 
 Shopping Cart Guided Project
  
-Getting Started: 
+# Getting Started: 
 Create a repo on GitHub such as "shopping-cart".  Add a README.md file, Python gitignore, and MIT # LICENSE.
+
 Clone the repo onto GitHub Desktop.
-From GitHub Desktop, open Visual Code Studio, create a .py file (such as shopping_cart.py) and copy the below contents into the .py file:
-# shopping_cart.py
+
+From GitHub Desktop, open Visual Code Studio, create a .py file (such as shopping_cart.py) and copy the below contents into the .py file: shopping_cart.py
+
  products = [
      {"id":1, "name": "Chocolate Sandwich Cookies", "department": "snacks", "aisle": "cookies cakes", # "price": 3.50},
      {"id":2, "name": "All-Seasons Salt", "department": "pantry", "aisle": "spices seasonings", "price": # 4.99},
@@ -27,40 +29,41 @@ From GitHub Desktop, open Visual Code Studio, create a .py file (such as shoppin
      {"id":18, "name": "Pizza for One Suprema Frozen Pizza", "department": "frozen", "aisle": "frozen # pizza", "price": 12.50},
      {"id":19, "name": "Gluten Free Quinoa Three Cheese & Mushroom Blend", "department": "dry goods # pasta", "aisle": "grains rice dried goods", "price": 3.99},
      {"id":20, "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink", "department": "beverages", # "aisle": "juice nectars", "price": 4.25}
- ] # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
+ ] #based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
  print(products)
+ 
  Open GitBash from GitHub Desktop
 
-Installing:
+# Installing:
 An Anaconda virtual environment will need to be set up.  Within GitBash type:
    conda create -n shopping-env python=3.7
    conda activate shopping-env
 To test the virtual environment, run the above given script by typing within GitBash:
 python shopping_cart.py
  
-Running the tests:
+# Running the tests:
 To run the test, enter product IDs until all items are selected.
 Enter 'DONE' when all items are selected and receipt will generate.
 
-Built With:
+# Built With:
 Python
 Anaconda
 Visual Studio Code
 
-Versioning:
+# Versioning:
 GitHub Desktop used for versioning.
 For the versions available, see the tags on this repository.
 
-Authors:
+# Authors:
 prof-rossetti - Initial work and provided guided project
 jkg363 - Completed guided project
 
-License:
+# License:
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
-Acknowledgments:
+# Acknowledgments:
 Guided project by: prof-rossetti
 SOURCE: https://github.com/prof-rossetti/intro-to-python/tree/master/projects/shopping-cart 
 
-README.md Template from:
+# README.md Template from:
 SOURCE: README-Template.md https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
