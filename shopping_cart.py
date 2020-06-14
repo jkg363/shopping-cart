@@ -23,11 +23,6 @@ products = [
     {"id":20, "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink", "department": "beverages", "aisle": "juice nectars", "price": 4.25}
 ] # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
 
-
-#
-# INFO CAPTURE / INPUT
-#
-
 total_price = 0
 selected_ids = []
 while True:
@@ -36,8 +31,7 @@ while True:
         break
     else: 
         selected_ids.append(selected_id)
-#
-# INFO DISPLAY / OUTPUT
+
 import datetime
 
 now = datetime.datetime.now()
@@ -46,21 +40,25 @@ print("---------------------------------")
 print("JOANN'S MARKET")
 print("17 Glenwolde Park")
 print("Tarrytown, New York 10591")
-print("914-539-0396")
+print("(914) 539-0396")
 print("WWW.JOANNSMARKET.COM")
 print("---------------------------------")
-print("CHECKOUT AT: " + str(now))
+print("CHECKOUT AT: " + str(now)) # make time readable
 print("---------------------------------")
-
+print("SELECTED PRODUCTS: ")
 for selected_id in selected_ids:
     matching_products = [p for p in products if str(p["id"]) == str(selected_id)]
     matching_product = matching_products[0]
     total_price = total_price + matching_product["price"]
-    print("SELECTED PRODUCT: " + matching_product["name"] + " " + str("${:,.2f}".format(matching_product["price"])))
+    print(" ... " + matching_product["name"] + " " + "(" + str("${:,.2f}".format(matching_product["price"])) + ")")
 
-
-print("TOTAL PRICE: " + str("${:,.2f}".format(total_price)))
-
+print("---------------------------------")
+print("SUBTOTAL: " + str("${:,.2f}".format(total_price)))
+#print tax
+#print total
+print("---------------------------------")
+print("THANK YOU FOR YOUR BUSINESS!")
+print("---------------------------------")
 
 #> ---------------------------------
 #> GREEN FOODS GROCERY
@@ -81,12 +79,7 @@ print("TOTAL PRICE: " + str("${:,.2f}".format(total_price)))
 #> ---------------------------------
 #> THANKS, SEE YOU AGAIN SOON!
 #> ---------------------------------
-# A grocery store name of your choice
-# A grocery store phone number and/or website URL and/or address of choice
-# The date and time of the beginning of the checkout process, formatted in a human-friendly way (e.g. 2020-02-07 03:54 PM)
-# The name and price of each shopping cart item, price being formatted as US dollars and cents (e.g. $3.50, etc.)
-# The total cost of all shopping cart items (i.e. the "subtotal"), formatted as US dollars and cents (e.g. $19.47), calculated as the sum of their prices
+
 # The amount of tax owed (e.g. $1.70), calculated by multiplying the total cost by a New York City sales tax rate of 8.75% (for the purposes of this project, groceries are not exempt from sales tax)
 # The total amount owed, formatted as US dollars and cents (e.g. $21.17), calculated by adding together the amount of tax owed plus the total cost of all shopping cart items
-# A friendly message thanking the customer and/or encouraging the customer to shop again
 
