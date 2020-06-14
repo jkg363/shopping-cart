@@ -1,5 +1,3 @@
-# shopping_cart.py
-
 products = [
     {"id":1, "name": "Chocolate Sandwich Cookies", "department": "snacks", "aisle": "cookies cakes", "price": 3.50},
     {"id":2, "name": "All-Seasons Salt", "department": "pantry", "aisle": "spices seasonings", "price": 4.99},
@@ -22,42 +20,3 @@ products = [
     {"id":19, "name": "Gluten Free Quinoa Three Cheese & Mushroom Blend", "department": "dry goods pasta", "aisle": "grains rice dried goods", "price": 3.99},
     {"id":20, "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink", "department": "beverages", "aisle": "juice nectars", "price": 4.25}
 ] # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
-
-total_price = 0
-selected_ids = []
-while True:
-    selected_id = input("Please input a product identifier, or 'DONE' if there are no more items: ")
-    if selected_id == "DONE":
-        break
-    else: 
-        selected_ids.append(selected_id)
-
-import datetime
-
-now = datetime.datetime.now()
-
-print("---------------------------------")
-print("JOANN'S MARKET")
-print("17 Glenwolde Park")
-print("Tarrytown, New York 10591")
-print("(914) 539-0396")
-print("WWW.JOANNSMARKET.COM")
-print("---------------------------------")
-print("CHECKOUT AT: " + now.strftime("%Y-%m-%d") + " " + now.strftime("%I:%M:%S %p"))
-print("---------------------------------")
-print("SELECTED PRODUCTS: ")
-for selected_id in selected_ids:
-    matching_products = [p for p in products if str(p["id"]) == str(selected_id)]
-    matching_product = matching_products[0]
-    total_price = total_price + matching_product["price"]
-    print(" ... " + matching_product["name"] + " " + "(" + str("${:,.2f}".format(matching_product["price"])) + ")")
-
-print("---------------------------------")
-print("SUBTOTAL: " + str("${:,.2f}".format(total_price)))
-tax = .0875*int(total_price)
-print("TAX: " + str("${:,.2f}".format(tax)))
-total = tax+int(total_price)
-print("TOTAL: " + str("${:,.2f}".format(total)))
-print("---------------------------------")
-print("THANK YOU FOR YOUR BUSINESS!")
-print("---------------------------------")
