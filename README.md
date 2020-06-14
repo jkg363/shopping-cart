@@ -36,26 +36,35 @@ From GitHub Desktop, open Visual Code Studio, create a .py file (such as shoppin
 
 # Installing:
 An Anaconda virtual environment will need to be set up.  Within GitBash type:
+
    conda create -n shopping-env python=3.7
+
    conda activate shopping-env
+
 To test the virtual environment, run the above given script by typing within GitBash:
 python shopping_cart.py
  
 # Running the tests:
+
 To run the test, enter product IDs until all items are selected.
+
 Enter 'DONE' when all items are selected and receipt will generate.
 
 # Built With:
 Python
+
 Anaconda
+
 Visual Studio Code
 
 # Versioning:
 GitHub Desktop used for versioning.
+
 For the versions available, see the tags on this repository.
 
 # Authors:
 prof-rossetti - Initial work and provided guided project
+
 jkg363 - Completed guided project
 
 # License:
@@ -63,6 +72,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 # Acknowledgments:
 Guided project by: prof-rossetti
+
 SOURCE: https://github.com/prof-rossetti/intro-to-python/tree/master/projects/shopping-cart 
 
 # README.md Template from:
