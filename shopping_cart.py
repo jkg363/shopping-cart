@@ -43,7 +43,7 @@ print("Tarrytown, New York 10591")
 print("(914) 539-0396")
 print("WWW.JOANNSMARKET.COM")
 print("---------------------------------")
-print("CHECKOUT AT: " + str(now)) # make time readable
+print("CHECKOUT AT: " + now.strftime("%Y-%m-%d") + " " + now.strftime("%I:%M:%S %p"))
 print("---------------------------------")
 print("SELECTED PRODUCTS: ")
 for selected_id in selected_ids:
@@ -54,7 +54,7 @@ for selected_id in selected_ids:
 
 print("---------------------------------")
 print("SUBTOTAL: " + str("${:,.2f}".format(total_price)))
-#print tax
+# print("TAX: " + .0875*(int(total_price)))
 #print total
 print("---------------------------------")
 print("THANK YOU FOR YOUR BUSINESS!")
