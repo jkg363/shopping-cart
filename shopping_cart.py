@@ -54,8 +54,10 @@ for selected_id in selected_ids:
 
 print("---------------------------------")
 print("SUBTOTAL: " + str("${:,.2f}".format(total_price)))
-# print("TAX: " + .0875*(int(total_price)))
-#print total
+tax = .0875*int(total_price)
+print("TAX: " + str("${:,.2f}".format(tax)))
+total = tax+int(total_price)
+print("TOTAL: " + str("${:,.2f}".format(total)))
 print("---------------------------------")
 print("THANK YOU FOR YOUR BUSINESS!")
 print("---------------------------------")
